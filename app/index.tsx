@@ -3,12 +3,13 @@ import React, { useEffect } from "react";
 import { colors } from "@/constants/theme";
 import { useRouter } from "expo-router";
 
-const index = () => {
+const Index = () => {
   const router = useRouter();
+
   useEffect(() => {
     setTimeout(() => {
       router.push("/(auth)/welcome");
-    }, 2000);
+    }, 400);
   }, []);
   return (
     <View style={styles.container}>
@@ -21,7 +22,7 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
 
 const styles = StyleSheet.create({
   container: {
