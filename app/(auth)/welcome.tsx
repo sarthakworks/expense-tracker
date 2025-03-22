@@ -37,7 +37,7 @@ const Welcome = () => {
                 Always take control
               </Typo>
               <Typo size={30} fontWeight={800}>
-                Always take control
+                of your finances
               </Typo>
             </Animated.View>
             <Animated.View
@@ -48,10 +48,10 @@ const Welcome = () => {
               style={{ alignItems: "center", gap: 2 }}
             >
               <Typo size={17} fontWeight={400}>
-                Always take control
+                Finance must be arranged to set a better
               </Typo>
               <Typo size={17} fontWeight={400}>
-                Always take control
+                lifestyle in future
               </Typo>
             </Animated.View>
             <Animated.View
