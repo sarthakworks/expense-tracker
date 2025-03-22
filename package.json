@@ -2,7 +2,10 @@
   "name": "expense-tracker",
   "main": "expo-router/entry",
   "version": "1.0.0",
+  "homepage": "https://github.com/sarthakworks/expense-tracker",
   "scripts": {
+    "predeploy": "expo export --output-dir dist",
+    "deploy": "gh-pages -d dist",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -41,6 +44,7 @@
     "eslint-config-expo": "~8.0.1",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.3",
+    "gh-pages": "^6.3.0",
     "jest": "^29.2.1",
     "jest-expo": "~52.0.6",
     "prettier": "^3.5.3",
