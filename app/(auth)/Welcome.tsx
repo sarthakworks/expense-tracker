@@ -7,6 +7,7 @@ import { verticalScale } from "@/utils/styling";
 import Button from "@/components/Button";
 import Animated, { FadeIn, FadeInDown } from "react-native-reanimated";
 import { useRouter } from "expo-router";
+import LottieView from "lottie-react-native";
 
 const Welcome = () => {
   const router = useRouter();
@@ -22,11 +23,17 @@ const Welcome = () => {
             <Typo fontWeight={"500"}>Sign in</Typo>
           </TouchableOpacity>
 
-          <Animated.Image
+          {/* <Animated.Image
             entering={FadeIn.duration(1000)}
             source={require("../../assets/images/welcome.png")}
             style={styles.welcomeImage}
             resizeMode="contain"
+          /> */}
+          <LottieView
+            style={{ flex: 1 }}
+            source={require("../../assets/lottie/finance.json")}
+            autoPlay
+            loop
           />
           <View style={styles.footer}>
             <Animated.View
